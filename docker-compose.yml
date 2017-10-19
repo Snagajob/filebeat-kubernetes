@@ -1,0 +1,9 @@
+version: '2'
+services:
+  filebeat:
+    build:
+        context: .
+    environment:
+      - EXCLUDED_FILES
+      - LOGSTASH_HOSTS=localhost:5000
+      - LOG_LEVEL=info
