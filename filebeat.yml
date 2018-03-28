@@ -9,7 +9,7 @@ filebeat.prospectors:
   json.message_key: log
   json.keys_under_root: true
   json.add_error_key: true
-  multiline.pattern: '^\s'
+  multiline.pattern: '^20..-..-..T..:..:..\..*Z\s\s'
   multiline.match: after
   document_type: kube-logs
   fields:
